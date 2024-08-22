@@ -7,14 +7,16 @@ public class Estudiante {
     private String telefono;
     private String email;
 
-    public Estudiante(){} // Constructor vacio
+    // Constructor vacío
+    public Estudiante() {}
 
-    public Estudiante(int idEstudiante){ // Constructor para la llave primaria
+    // Constructor para la llave primaria
+    public Estudiante(int idEstudiante) {
         this.idEstudiante = idEstudiante;
     }
 
     // Constructor para insertar un nuevo estudiante
-    public Estudiante(String nombre, String apellido, String telefono, String email){
+    public Estudiante(String nombre, String apellido, String telefono, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
@@ -22,7 +24,7 @@ public class Estudiante {
     }
 
     // Constructor para modificar
-    public  Estudiante(int idEstudiante, String nombre, String apellido, String telefono, String email){
+    public Estudiante(int idEstudiante, String nombre, String apellido, String telefono, String email) {
         this.idEstudiante = idEstudiante;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -30,7 +32,8 @@ public class Estudiante {
         this.email = email;
     }
 
-    public String getIdEstudiante() {
+    // Getter y Setter para idEstudiante
+    public int getIdEstudiante() {
         return idEstudiante;
     }
 
@@ -38,6 +41,7 @@ public class Estudiante {
         this.idEstudiante = idEstudiante;
     }
 
+    // Getter y Setter para nombre
     public String getNombre() {
         return nombre;
     }
@@ -46,6 +50,7 @@ public class Estudiante {
         this.nombre = nombre;
     }
 
+    // Getter y Setter para apellido
     public String getApellido() {
         return apellido;
     }
@@ -54,6 +59,7 @@ public class Estudiante {
         this.apellido = apellido;
     }
 
+    // Getter y Setter para teléfono
     public String getTelefono() {
         return telefono;
     }
@@ -62,6 +68,7 @@ public class Estudiante {
         this.telefono = telefono;
     }
 
+    // Getter y Setter para email
     public String getEmail() {
         return email;
     }
@@ -70,8 +77,8 @@ public class Estudiante {
         this.email = email;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
+    @Override
+    public String toString() {
         return "Estudiante{" +
                 "idEstudiante=" + idEstudiante +
                 ", nombre='" + nombre + '\'' +
@@ -81,3 +88,4 @@ public class Estudiante {
                 '}';
     }
 }
+
